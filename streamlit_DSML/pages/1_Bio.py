@@ -39,10 +39,14 @@ photo_src = find_photo("RanjidhaR.jpg")
 col1, col2 = st.columns([1, 2], vertical_alignment="center")
 
 with col1:
-    try:
-        st.image(PHOTO_PATH, caption=NAME, use_container_width=True)
-    except Exception:
-        st.info("Add a photo named `your_photo.jpg` inside the `assets/` folder, or change PHOTO_PATH.")
+    if photo_src:
+        st.image(photo_src, caption=NAME, use_container_width=True)
+    else:
+        st.info(
+            "📷 Place `Your_Photo.jpg` inside an `assets/` folder at the app root "
+            "or update the path in `find_photo()`."
+        )
+        
 with col2:
     st.subheader(NAME)
     st.write(PROGRAM)
