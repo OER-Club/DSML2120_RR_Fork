@@ -5,7 +5,7 @@ st.title("👋 My Bio")
 
 # ---------- TODO: Replace with your own info ----------
 NAME = "Ranjidha Rajan"
-PROGRAM = "Your Program / CS / Professor"
+PROGRAM = "Data Science & ML / CS / Professor"
 INTRO = (
     "Write 2–3 sentences about yourself: what you’re studying/working on, "
     "what excites you about data visualization or computing, etc."
