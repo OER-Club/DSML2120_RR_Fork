@@ -3,8 +3,8 @@ import streamlit as st
 st.title("👋 My Bio")
 
 # ---------- TODO: Replace with your own info ----------
-NAME = "Your Name"
-PROGRAM = "Your Program / Major / Role"
+NAME = "Ranjidha Rajan"
+PROGRAM = "Your Program / Major / Professor"
 INTRO = (
     "Write 2–3 sentences about yourself: what you’re studying/working on, "
     "what excites you about data visualization or computing, etc."
