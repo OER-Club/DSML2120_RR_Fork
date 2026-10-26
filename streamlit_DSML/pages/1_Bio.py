@@ -15,8 +15,8 @@ FUN_FACTS = [
     "I’m learning …",
     "I want to build …",
 ]
-#PHOTO_PATH = "RanjidhaR.jpg"  # Put a file in repo root or set a URL
-def find_photo(filename="RanjidhaR.jpg"):
+PHOTO_PATH = "RanjidhaR.jpg"  # Put a file in repo root or set a URL
+def find_photo(filename=PHOTO_PATH):
     # Try common locations for multipage apps
     try:
         script_dir = Path(__file__).resolve().parent
@@ -33,7 +33,7 @@ def find_photo(filename="RanjidhaR.jpg"):
             return str(p)
     return None
 
-photo_src = find_photo("RanjidhaR.jpg")
+photo_src = find_photo(PHOTO_PATH)
 
 # ---------- Layout ----------
 col1, col2 = st.columns([1, 2], vertical_alignment="center")
